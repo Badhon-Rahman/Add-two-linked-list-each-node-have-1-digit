@@ -39,14 +39,9 @@ void SecondList(int value){
 
 void AddList(){
      ptr firstListData = firstHead, secondListData = secondHead;
-     int d1,d2,sum, remain, temp = 0;
+     int sum, remain, temp = 0;
      while(firstListData != NULL){
-        d1 = firstListData->data;
-        d2 = secondListData->data;
         sum = firstListData->data + secondListData->data + temp;
-        //temp = 0;
-        cout << sum << endl;
-
         ptr sumNode = new ListNode;
 
         if(sum < 10){
@@ -109,6 +104,5 @@ int main()
         SecondList(secondList);
     }
     AddList();
-   // DisplaySumList();
     return 0;
 }
